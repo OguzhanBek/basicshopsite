@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.butonlar {
+  padding: 0.4rem;
+}
+.sizes {
+  margin-bottom: 2rem;
+}
+
+/* Scrollbar'ın genişliği */
+.scrollable-div::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Scrollbar arka planı */
+.scrollable-div::-webkit-scrollbar-track {
+  background: #131313;
+  border-radius: 10px;
+}
+
+/* Scrollbar'ın kaydırma çubuğu */
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Scrollbar üzerine gelince */
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: #131212;
+}
+@media screen and (max-width: 1024px ) {
+  .sepet-ikonu {
+    padding: 0.3rem;
+  }
+.linkedin{
+  width: 50%;
+}
+  .sepet-ikonu svg {
+    font-size: 28px; /* Sepet ikonu küçüldü */
+  }
+
+  .sepet-ikon-badge {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* LinkedIn Kutusu Aşağıya Sabitlendi */
+
+  .linkedin {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    z-index: 5;
+    padding: 10px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .linkedindiv {
+    padding-right: 80px; /* Sepet ikonuna çarpmaması için sağa itildi */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Mobil */
+
+
+  .linkedin {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .right-navbar h3 {
+    font-size: 13px;
+  }
+
+  .right-navbar p {
+    font-size: 9px;
+  }
+
+  .linkedindiv img {
+    width: 45px;
+    height: 45px;
+  }
+}
